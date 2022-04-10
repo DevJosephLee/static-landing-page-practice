@@ -1,0 +1,116 @@
+* {
+  font-family: sans-serif;
+}
+
+@mixin logo {
+  width: 125px;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero-image-container,
+.hero-image,
+.gaes-photo {
+  width: 100%;
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.hero-search-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 25rem;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.column-qtr {
+  width: 25%;
+}
+
+.logo {
+  @include logo();
+}
+
+.nav-buttons {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.login-button {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+}
+
+.signup-button {
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+  color: white
+}
+
+.hero-text {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 0 5rem;
+}
+
+.for-sale-button {
+  background-color: white;
+  border: none;
+}
+
+.for-rent-button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.search-button {
+  background-color: black;
+  border: none;
+  color: white;
+}
